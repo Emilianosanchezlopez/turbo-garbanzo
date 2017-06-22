@@ -8,7 +8,7 @@ var express = require('express');
 //   }
 // });
 var app = express();
-var port = 5000;
+var port = process.env.PORT || 1337;
 app.use(express.static('public'));
 app.use(express.static('src/views'));
 
